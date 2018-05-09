@@ -220,13 +220,13 @@ int main(int argc, char** argv)
             cv::Mat sketch;
             chessboardL.getSketch().copyTo(sketch);
 
-            cv::imshow("Image - Left", sketch);
+//            cv::imshow("Image - Left", sketch);
 
             chessboardR.getSketch().copyTo(sketch);
 
-            cv::imshow("Image - Right", sketch);
+//            cv::imshow("Image - Right", sketch);
 
-            cv::waitKey(50);
+//            cv::waitKey(50);
         }
         else if (verbose)
         {
@@ -235,8 +235,8 @@ int main(int argc, char** argv)
         chessboardFoundL.at(i) = chessboardL.cornersFound();
         chessboardFoundR.at(i) = chessboardR.cornersFound();
     }
-    cv::destroyWindow("Image - Left");
-    cv::destroyWindow("Image - Right");
+//    cv::destroyWindow("Image - Left");
+//    cv::destroyWindow("Image - Right");
 
     if (calibration.sampleCount() < 10)
     {
